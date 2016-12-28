@@ -282,7 +282,7 @@ All commands, except those denoted with *Shell* or *Browser* are included in dem
 	`# docker network ls`
 
 3. Create the backend service  
-	`# docker service create --name backend-app --replicas 3 –network appnetwork hello`
+	`# docker service create --name backend-app --replicas 3 –-network appnetwork hello`
 
 4. Create the NGINX F/OSS service  
 	`# docker service create --name nginx --replicas 1 -p 8090:80 –p 9443:443 --network appnetwork nginxbasic`
